@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="shoe"
+            type="com.udacity.shoestore.models.Shoe" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/white_text_color"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/shoe_name_tv"
+            style="@style/ShoeItemHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@{@string/shoe_name_text(shoe.name)}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Name" />
+
+        <TextView
+            android:id="@+id/shoe_size_tv"
+            style="@style/ShoeItemText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:text="@{@string/shoe_size_text(shoe.size)}"
+            app:layout_constraintEnd_toEndOf="@+id/shoe_name_tv"
+            app:layout_constraintStart_toStartOf="@+id/shoe_name_tv"
+            app:layout_constraintTop_toBottomOf="@+id/shoe_name_tv"
+            tools:text="Size" />
+
+        <TextView
+            android:id="@+id/shoe_company_tv"
+            style="@style/ShoeItemText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@{@string/shoe_company_text(shoe.company)}"
+            app:layout_constraintBottom_toTopOf="@+id/shoe_description_tv"
+            app:layout_constraintEnd_toEndOf="@+id/shoe_size_tv"
+            app:layout_constraintStart_toStartOf="@+id/shoe_size_tv"
+            app:layout_constraintTop_toBottomOf="@+id/shoe_size_tv"
+            tools:text="Company" />
+
+        <TextView
+            android:id="@+id/shoe_description_tv"
+            style="@style/ShoeItemText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="@{@string/shoe_description_text(shoe.description)}"
+            app:layout_constraintBottom_toTopOf="@+id/divider"
+            app:layout_constraintEnd_toEndOf="@+id/shoe_company_tv"
+            app:layout_constraintStart_toStartOf="@+id/shoe_company_tv"
+            app:layout_constraintTop_toBottomOf="@+id/shoe_company_tv"
+            tools:text="Description sadsnksn dsd sak dasln dasn dasn dasn das ndsan  asndasn dasn dasndansl dnas dnasn dasn dasndsnlad nl" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/divider"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shoe_description_tv" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

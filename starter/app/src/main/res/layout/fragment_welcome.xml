@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--We use a LinearLayout here because the layout is pretty straight
+        forward.  Meaning that each element is laid out in a vertical
+        pattern that doesn't require specific positioning. -->
+    <LinearLayout
+        android:id="@+id/welcome_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="@dimen/screen_padding">
+
+        <TextView
+            android:id="@+id/welcome_text_view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_horizontal_margin"
+            android:textSize="@dimen/item_heading_font_size"
+            android:gravity="center"
+            android:text="@string/welcome_text1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <TextView
+            android:id="@+id/welcome_text_view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_horizontal_margin"
+            android:textSize="@dimen/item_heading_font_size"
+            android:padding="@dimen/welcome_default_padding"
+            android:text="@string/welcome_text2"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <Button
+            android:id="@+id/welcome_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_horizontal_margin"
+            android:layout_marginVertical="@dimen/default_vertical_margin"
+            android:text="@string/welcome_instructions_button_text"
+            android:theme="@style/GoButton" />
+    </LinearLayout>
+</layout>

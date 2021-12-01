@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">ShoeStore</string>
+    <string name="login_email_text">Email</string>
+    <string name="login_password_text">Password</string>
+    <string name="create_account_button_text">Create Account</string>
+    <string name="login_button">Sign in</string>
+    <string name="welcome_text1">Welcome</string>
+    <string name="welcome_text2">We help you keep track of your shoe inventory. Tap the button below to read the instructions.</string>
+    <string name="welcome_instructions_button_text">Instructions</string>
+    <string name="instructions_text1">Tap the button below to see the current list of shoes.</string>
+    <string name="instructions_text2">If you want to add a shoe, tap on the add button. When adding a shoe, you cannot leave all entries empty.</string>
+    <string name="instructions_button_text">Current Shoes in Inventory</string>
+    <string name="shoe_list_content_description_text">Add</string>
+    <string name="menu_item_logout">Logout</string>
+    <string name="shoe_detail_shoe_name_text">Name</string>
+    <string name="shoe_detail_shoe_size_text">Size</string>
+    <string name="shoe_detail_company_name_text">Company</string>
+    <string name="shoe_detail_description_text">Description</string>
+    <string name="shoe_detail_cancel_button_text">Cancel</string>
+    <string name="shoe_detail_save_button_text">Save</string>
+    <string name="shoe_name_text">%s</string>
+    <string name="shoe_size_text">Size: %.1f</string>
+    <string name="shoe_company_text">Company: %s</string>
+    <string name="shoe_description_text">Description: %s</string>
+    <string name="validation_error">You cannot leave all entries blank</string>
+
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 </resources>

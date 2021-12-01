@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--We use a LinearLayout here because the layout is pretty straight
+        forward.  Meaning that each element is laid out in a vertical
+        pattern that doesn't require specific positioning. -->
+    <LinearLayout
+        android:id="@+id/instructions_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:background="@color/bg_color"
+        android:padding="@dimen/screen_padding">
+
+        <TextView
+            android:id="@+id/instructions_text_view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/default_vertical_margin"
+            android:padding="@dimen/default_content_padding"
+            android:textSize="@dimen/item_heading_font_size"
+            android:text="@string/instructions_text1"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <TextView
+            android:id="@+id/instructions_text_view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/default_vertical_margin"
+            android:padding="@dimen/default_content_padding"
+            android:textSize="@dimen/item_heading_font_size"
+            android:text="@string/instructions_text2"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <Button
+            android:id="@+id/instructions_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/default_vertical_margin"
+            android:padding="@dimen/default_content_padding"
+            android:text="@string/instructions_button_text"
+            android:theme="@style/GoButton" />
+    </LinearLayout>
+</layout>

@@ -7,6 +7,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -15,5 +16,43 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Button Styles -->
+    <style name="GoButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/green_color</item>
+        <item name="colorControlHighlight">@color/selected_green_color</item>
+        <item name="android:textColor">@color/white_text_color</item>
+        <item name="colorAccent">@color/selected_green_color</item>
+    </style>
+
+    <style name="SaveButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/green_color</item>
+        <item name="colorControlHighlight">@color/selected_green_color</item>
+        <item name="android:textColor">@color/white_text_color</item>
+        <item name="colorAccent">@color/selected_green_color</item>
+    </style>
+
+    <style name="CancelButton" parent="Widget.AppCompat.Button.Colored">
+        <!--        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless.Colored</item>-->
+        <item name="colorButtonNormal">@color/red_color</item>
+        <item name="android:textColor">@color/white_text_color</item>
+        <item name="colorControlHighlight">@color/selected_red_color</item>
+
+    </style>
+    <style name="ShoeItemHeading">
+        <item name="android:layout_marginStart">@dimen/item_default_margin</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/item_heading_font_size</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="color">#555555</item>
+    </style>
+    <style name="ShoeItemText">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">@dimen/item_text_font_size</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="color">#8A8A8A</item>
+    </style>
+
 
 </resources>

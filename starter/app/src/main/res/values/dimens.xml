@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_horizontal_margin">16dp</dimen>
+    <dimen name="default_vertical_margin">16dp</dimen>
+    <dimen name="welcome_default_padding">8dp</dimen>
+    <dimen name="default_content_padding">8dp</dimen>
+    <dimen name="screen_padding">16dp</dimen>
+    <dimen name="item_default_margin">16dp</dimen>
+    <dimen name="item_heading_font_size">16sp</dimen>
+    <dimen name="item_text_font_size">12sp</dimen>
+    <dimen name="_5dp">5dp</dimen>
+
+    <dimen name="fragment_horizontal_margin">16dp</dimen>
+    <dimen name="fragment_vertical_margin">16dp</dimen>
+    <dimen name="default_view_margin">8dp</dimen>
+    <dimen name="small_text_size">12sp</dimen>
+    <dimen name="medium_text_size">14sp</dimen>
+    <dimen name="item_margin">16dp</dimen>
+</resources>
