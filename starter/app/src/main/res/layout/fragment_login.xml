@@ -2,25 +2,27 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/bg_color"
-        android:gravity="center"
-        android:padding="@dimen/screen_padding">
+
+    <!--We use a ConstraintLayout here because the layout relies on
+           placing elements in a specific manner.  Additionally, we
+           need to make sure the buttons are designed a certain way
+           & the Edit text uses Material Layout to function
+           Have implemented GuideLine so the layouts align to center of the screen -->
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:padding="20dp"
+            android:background="@color/bg_color"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/username_input"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toTopOf="@id/login_password_label"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintStart_toStartOf="parent">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/login_email_editText"
@@ -36,10 +38,10 @@
                 android:id="@+id/login_password_label"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toTopOf="@id/guideline"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/username_input">
+                app:layout_constraintStart_toStartOf="parent">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/login_password_editText"
@@ -57,11 +59,11 @@
                 android:layout_width="173dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:theme="@style/GoButton"
                 android:text="@string/create_account_button_text"
+                android:theme="@style/GoButton"
                 app:layout_constraintEnd_toStartOf="@+id/login_button"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/login_password_label" />
+                app:layout_constraintTop_toBottomOf="@id/guideline" />
 
             <Button
                 android:id="@+id/login_button"
@@ -73,6 +75,13 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/create_account_button" />
 
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                app:layout_constraintGuide_percent="0.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </LinearLayout>
 </layout>
